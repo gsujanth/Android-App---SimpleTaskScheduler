@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Author : Sujanth Babu Guntupalli
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.princ.homework2.CreateTaskActivity">
+
+
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:ems="10"
+        android:hint="@string/TaskTitle"
+        android:maxLength="20"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etTaskDate"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etTaskTitle"
+        android:layout_alignStart="@+id/etTaskTitle"
+        android:layout_below="@+id/etTaskTitle"
+        android:ems="10"
+        android:hint="@string/TaskDate"
+        android:focusableInTouchMode="false" />
+
+    <EditText
+        android:id="@+id/etTaskTime"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etTaskDate"
+        android:layout_alignStart="@+id/etTaskDate"
+        android:layout_below="@+id/etTaskDate"
+        android:ems="10"
+        android:hint="@string/TaskTime"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/tvPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etTaskTime"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/TaskPriority" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPriority"
+        android:layout_alignStart="@+id/tvPriority"
+        android:layout_below="@+id/tvPriority"
+        android:layout_marginTop="13dp"
+        android:id="@+id/radioGroup" >
+
+    <RadioButton
+        android:id="@+id/rbHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/highPriority" />
+
+    <RadioButton
+        android:id="@+id/rbMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mediumPriority" />
+
+    <RadioButton
+        android:id="@+id/rbLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lowPriority" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/saveTask" />
+</RelativeLayout>

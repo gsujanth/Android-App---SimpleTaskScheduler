@@ -1,0 +1,19 @@
+<resources>
+    <!--
+        Author : Sujanth Babu Guntupalli
+    -->
+    <string name="app_name">Homework2</string>
+    <string name="TaskTitle">Title</string>
+    <string name="TaskDate">Date</string>
+    <string name="TaskTime">Time</string>
+    <string name="TaskPriority">Priority:</string>
+    <string name="highPriority">High</string>
+    <string name="mediumPriority">Medium</string>
+    <string name="lowPriority">Low</string>
+    <string name="saveTask">Save</string>
+    <string name="ViewTitle">Task Title</string>
+    <string name="ViewDate">Task Date</string>
+    <string name="ViewTime">Task Time</string>
+    <string name="ViewPriority">Task Priority</string>
+    <string name="InitialTask">Task 0 of 0</string>
+</resources>
